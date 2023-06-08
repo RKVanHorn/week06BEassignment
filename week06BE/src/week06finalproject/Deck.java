@@ -13,9 +13,11 @@ public class Deck {
 	public Deck() {
 		String[] names = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
 		String[] suits = {"♥", "♦", "♣", "♠"};
-		for(String suit : suits) {
-			for (String name : names) {
-				cards.add(new Card(name, suit, (Arrays.asList(names).indexOf(name)+2)));
+		for(String suit : suits) { //loop through the suits
+			for (String name : names) { //loop through the names
+				//create a card with the name, suit and a value that is equal to the index +2 of the name
+				cards.add(new Card(name, suit, (Arrays.asList(names).indexOf(name)+2))); 
+				
 			}
 		}
 	}

@@ -1,9 +1,9 @@
 package week06finalproject;
 
 public class Card {
-	String name;
-	String suit;
-	int value;
+	String name; //face name
+	String suit; //suit name
+	int value; //value is 2-14
 	
 	public String getName() {
 		return name;
@@ -29,7 +29,7 @@ public class Card {
 		this.value = value;
 	}
 
-	Card(String name, String suit, int value) {
+	Card(String name, String suit, int value) {  //create a card that has a name, suit and value
 		this.name = name;
 		this.suit = suit;
 		this.value = value;

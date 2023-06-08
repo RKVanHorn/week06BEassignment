@@ -11,7 +11,7 @@ public class App {
 	//Set-up and deal the cards to 2 players
 		Deck deck = new Deck();
 		deck.shuffle();
-		List<Card> hand1 = new ArrayList<>();
+		List<Card> hand1 = new ArrayList<>(); //create an empty list for each player's hand
 		List<Card> hand2 = new ArrayList<>();
 		
 		Player player1 = new Player("Player1", 0, hand1);
